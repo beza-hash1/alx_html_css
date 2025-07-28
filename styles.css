@@ -1,0 +1,42 @@
+/* styles.css */
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 1em;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+}
+
+header ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 1em;
+  background-color: #222;
+  margin-bottom: 20px;
+}
+
+header ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header ul li a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  margin-top: 2em;
+  font-size: 0.9em;
+  text-align: center;
+  color: #555;
+}
