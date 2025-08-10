@@ -1,0 +1,38 @@
+/* Our Results Section */
+.our-results {
+  background-color: #f0f4ff;
+  padding: calc(var(--spacing) * 4) 0;
+  text-align: center;
+}
+
+.results-row {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: var(--spacing);
+}
+
+.result-item {
+  flex: 1 1 250px;
+  max-width: 300px;
+  padding: var(--spacing);
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.result-icon {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: var(--spacing);
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%; /* temporary shape before pentagon in Task 6 */
+  background-color: #d6e0ff;
+}
+
+/* You’ll replace border-radius with pentagon shape in Task 6 */
