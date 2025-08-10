@@ -113,6 +113,9 @@ body {
   border-radius: 10px;
   background-color: #f3f6fc;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  animation: pulse 6s ease-in-out infinite;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  cursor: pointer;
 }
 
 .icon-item i.hs-icon {
@@ -134,6 +137,12 @@ body {
   line-height: 1.4;
 }
 
+.icon-item:hover {
+  animation: none;
+  transform: scale(1.1) rotate(5deg);
+  opacity: 1;
+}
+
 /* Our Results Section */
 .our-results {
   background-color: #f0f4ff;
@@ -151,5 +160,134 @@ body {
 .result-item {
   flex: 1 1 250px;
   max-width: 300px;
-  padding:1rem
+  padding: var(--spacing);
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  animation: pulse 6s ease-in-out infinite;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  cursor: pointer;
+}
+
+.result-item:hover {
+  animation: none;
+  transform: scale(1.1) rotate(5deg);
+  opacity: 1;
+}
+
+.result-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto var(--spacing) auto;
+  color: var(--color-primary);
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 80px;
+  background-color: #d6e0ff;
+  clip-path: polygon(
+    50% 0%,
+    90% 35%,
+    75% 100%,
+    25% 100%,
+    10% 35%
+  );
+  animation: bounce 4s ease-in-out infinite;
+  text-align: center;
+  position: relative;
+}
+
+/* Contact Us Section */
+.contact-us {
+  background-color: #fff;
+  padding: calc(var(--spacing) * 4) 0;
+  text-align: center;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: var(--spacing);
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--color-text);
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: var(--font-family);
+  font-size: 1rem;
+  resize: vertical;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: var(--color-primary);
+  outline: none;
+}
+
+/* Footer Section */
+.footer {
+  background-color: #222;
+  color: #eee;
+  padding: calc(var(--spacing) * 2) 0;
+  text-align: center;
+}
+
+.footer p {
+  margin-bottom: var(--spacing);
+  font-size: 0.9rem;
+}
+
+.footer-nav a {
+  color: #eee;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+  color: var(--color-primary);
+}
+
+/* Responsive Footer */
+@media (max-width: 480px) {
+  .footer-nav a {
+    display: block;
+    margin: 0.5rem 0;
+  }
+}
+
+/* Animations */
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.85;
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
 }
