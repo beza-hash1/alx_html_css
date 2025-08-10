@@ -1,0 +1,247 @@
+/* Reset CSS */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* CSS variables */
+:root {
+  --color-primary: #0d6efd;
+  --color-background: #f9f9f9;
+  --color-text: #222;
+  --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --spacing: 1rem;
+}
+
+/* Base styles */
+body {
+  font-family: var(--font-family);
+  background-color: var(--color-background);
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: var(--spacing);
+}
+
+/* Hero Section */
+.hero {
+  background: url('images/hero-desktop.jpg') no-repeat center/cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero-title {
+  font-size: 3rem;
+  margin-bottom: var(--spacing);
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  margin-bottom: calc(var(--spacing) * 1.5);
+  max-width: 600px;
+}
+
+.btn-primary {
+  display: inline-block;
+  background-color: var(--color-primary);
+  color: white;
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #084cdf;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .hero {
+    background: url('images/hero-mobile.jpg') no-repeat center/cover;
+    height: 60vh;
+    padding: var(--spacing);
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+}
+
+/* What we do section */
+.what-we-do {
+  background-color: #fff;
+  padding: calc(var(--spacing) * 4) 0;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: calc(var(--spacing) * 2);
+  color: var(--color-primary);
+}
+
+.icons-row {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: var(--spacing);
+}
+
+.icon-item {
+  flex: 1 1 250px;
+  max-width: 300px;
+  padding: var(--spacing);
+  border-radius: 10px;
+  background-color: #f3f6fc;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.icon-item i.hs-icon {
+  font-size: 4rem;
+  color: var(--color-primary);
+  margin-bottom: var(--spacing);
+  display: inline-block;
+}
+
+.icon-item h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: var(--color-text);
+}
+
+.icon-item p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.4;
+}
+
+/* Our Results Section */
+.our-results {
+  background-color: #f0f4ff;
+  padding: calc(var(--spacing) * 4) 0;
+  text-align: center;
+}
+
+.results-row {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: var(--spacing);
+}
+
+.result-item {
+  flex: 1 1 250px;
+  max-width: 300px;
+  padding: var(--spacing);
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.result-icon {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: var(--spacing);
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%; /* will become pentagon later */
+  background-color: #d6e0ff;
+}
+
+/* Contact Us Section */
+.contact-us {
+  background-color: #fff;
+  padding: calc(var(--spacing) * 4) 0;
+  text-align: center;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: var(--spacing);
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--color-text);
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: var(--font-family);
+  font-size: 1rem;
+  resize: vertical;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: var(--color-primary);
+  outline: none;
+}
+
+/* Footer Section */
+.footer {
+  background-color: #222;
+  color: #eee;
+  padding: calc(var(--spacing) * 2) 0;
+  text-align: center;
+}
+
+.footer p {
+  margin-bottom: var(--spacing);
+  font-size: 0.9rem;
+}
+
+.footer-nav a {
+  color: #eee;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+  color: var(--color-primary);
+}
+
+/* Responsive Footer */
+@media (max-width: 480px) {
+  .footer-nav a {
+    display: block;
+    margin: 0.5rem 0;
+  }
+}
