@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Headphones - Responsive Hamburger Menu</title>
+  <link rel="stylesheet" href="8-styles.css" />
+  <link rel="stylesheet" href="fonts/holberton_school-icon/holberton-school-icons.css" />
+</head>
+<body>
+
+  <header class="hero">
+    <nav class="navbar container">
+      <a href="#" class="logo">Headphones</a>
+      <button class="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+      <div class="nav-menu" id="nav-menu" role="menu" hidden>
+        <a href="#" role="menuitem">Home</a>
+        <a href="#" role="menuitem">Products</a>
+        <a href="#" role="menuitem">About</a>
+        <a href="#" role="menuitem">Contact</a>
+      </div>
+    </nav>
+
+    <div class="container hero-content">
+      <h1 class="hero-title">Experience Sound Like Never Before</h1>
+      <p class="hero-subtitle">Discover the best headphones with ultimate comfort and noise cancellation.</p>
+      <a href="#" class="btn-primary">Shop Now</a>
+    </div>
+  </header>
+
+  <!-- What we do section -->
+  <section class="what-we-do">
+    <div class="container">
+      <h2 class="section-title">What we do...</h2>
+      <div class="icons-row">
+        <div class="icon-item">
+          <i class="hs-icon hs-headphones"></i>
+          <h3>High Quality Audio</h3>
+          <p>Delivering crystal clear sound with deep bass and rich tones.</p>
+        </div>
+        <div class="icon-item">
+          <i class="hs-icon hs-noise-cancel"></i>
+          <h3>Noise Cancellation</h3>
+          <p>Block out the world and focus on your music.</p>
+        </div>
+        <div class="icon-item">
+          <i class="hs-icon hs-comfort"></i>
+          <h3>Ultimate Comfort</h3>
+          <p>Ergonomic design for hours of listening pleasure.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Results Section -->
+  <section class="our-results">
+    <div class="container">
+      <h2 class="section-title">Our results</h2>
+      <div class="results-row">
+        <div class="result-item">
+          <div class="result-icon pentagon">95%</div>
+          <h3>Customer Satisfaction</h3>
+          <p>High ratings from our loyal customers worldwide.</p>
+        </div>
+        <div class="result-item">
+          <div class="result-icon pentagon">120K</div>
+          <h3>Units Sold</h3>
+          <p>Over 120,000 headphones delivered globally.</p>
+        </div>
+        <div class="result-item">
+          <div class="result-icon pentagon">5 Years</div>
+          <h3>Experience</h3>
+          <p>Dedicated to excellence in audio technology.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Us Section -->
+  <section class="contact-us">
+    <div class="container">
+      <h2 class="section-title">Contact us</h2>
+      <form class="contact-form" action="#" method="post" novalidate>
+        <div class="form-group">
+          <label for="name">Name<span aria-hidden="true">*</span></label>
+          <input type="text" id="name" name="name" required placeholder="Your full name" />
+        </div>
+        <div class="form-group">
+          <label for="email">Email<span aria-hidden="true">*</span></label>
+          <input type="email" id="email" name="email" required placeholder="you@example.com" />
+        </div>
+        <div class="form-group">
+          <label for="message">Message<span aria-hidden="true">*</span></label>
+          <textarea id="message" name="message" rows="5" required placeholder="Write your message here..."></textarea>
+        </div>
+        <button type="submit" class="btn-primary">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Headphones Inc. All rights reserved.</p>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Support</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="8-script.js"></script>
+</body>
+</html>
